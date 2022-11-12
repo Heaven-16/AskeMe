@@ -1,0 +1,69 @@
+#input{
+    border-radius: 25px;
+    border: 2px solid #609;
+    padding: 20px; 
+    width: 800px;
+    height: 40px;
+    position: fixed;
+    top: 39%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.wrapper{
+    height: 100px;
+    width: 800px;
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    top:45%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -400;
+    
+}
+.heyo{
+    font-style: Bold;
+    color: rgb(172, 172, 172);
+    width: 400px;
+    position: fixed;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.output{
+    background-color:rgb(43, 93, 255);
+    border: none;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 40px;
+    padding: 10px;
+    font-size: 25px;
+
+    position: fixed;
+    top: 49%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hidden{
+    background-color: rgba(255, 255, 255, 0.582);
+    width: 450px;
+    font-size: 30px;
+    font-weight: bold;
+    position: fixed;
+    top: 53%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: blinking;
+    animation-duration: 1s;
+    animation-iteration-count: finite 5s;
+    }
+    @keyframes blinking {
+    50%{    color: transparent;        }
+    100%{  color: black;     }
+    }
+
+
+

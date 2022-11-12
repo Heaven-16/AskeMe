@@ -1,0 +1,43 @@
+<html>
+<title>
+Askmeanything
+</title>
+<head>
+    <link href="askmewhat.css" rel="stylesheet">
+</head>
+<body>
+    <body style="background-image: url(nyan-cat.gif);
+                background-size: cover; Width:1080px; height:400px;
+                background-color:rgb(0, 0, 0);">
+    <center>
+    <div class="wrapper">
+        <div class="content">
+            <p class="heyo"> Seek your answer...</p>
+            <input type="text" id="input"><br>
+            <button class="output"> Analyze</button>
+            <p class="hidden hide"></p>
+        </div>
+    </div>
+    </center>
+</body>
+<script>
+    const btn = document.querySelectorAll('.output');
+    const hidden = document.querySelector('.hide');
+    const reply = [
+        "Yes",
+        "Yes, If you do it now",
+        "Absolutely, without a doubt",
+        "Now may not be a good time,",
+        "No, never... Sorry",
+        "Walang chance pre"
+    ];
+    btn[0].addEventListener('click',() =>{
+        hidden.innerHTML = "Hmmm...";
+        setTimeout(function(){
+            let i = Math.floor(Math.random()*5-0);
+            hidden.innerHTML = reply[i];
+            
+    },4000);
+    });
+</script>
+</html>
